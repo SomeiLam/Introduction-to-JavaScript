@@ -204,11 +204,11 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(km){
+  return km * 0.621371;
 }
 
-
+console.log('task 5a ', miles(10));
 
 //Task 5b - Feet to CM
 /*
@@ -218,10 +218,10 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm){
+  return cm / 30.48;
 }
-
+ console.log('task 5b ', feet(4));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -258,10 +258,19 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(score){
+  if (score >= 90) {
+    return 'you got an A';
+  } else if (score >= 80) {
+    return 'you got a B';
+  } else if (score >= 70) {
+    return 'you got a C';
+  } else if (score >= 60) {
+    return 'you got a D';
+  } else return 'you got an F';
 }
 
+console.log('task 7 ', grade(87));
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
@@ -277,9 +286,17 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(str) {
+  let myStr = str.toLowerCase();
+  let count = 0;
+  let vowel = ['a', 'e', 'i', 'o', 'u'];
+  for (let i = 0; i < myStr.length; i++) {
+    if (vowel.includes(myStr[i])) count++;
+  }
+  return count;
 }
+
+console.log(vowelCounter('Amy Lam'));
 
 
 
