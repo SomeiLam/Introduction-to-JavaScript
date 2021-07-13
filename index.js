@@ -20,6 +20,9 @@ Do the following:
    HINT: no function required
 */
 
+let votingAge = 20;
+if (votingAge >= 18) console.log('task 1a ' + 'true');
+
 
 
 /*
@@ -33,6 +36,13 @@ Do the following:
    HINT: no function required
 */
 
+let first = 1;
+let second = 2;
+if (first !== second) {
+  first = second;
+}
+
+console.log('task 1b ' + first);
 
 
 
@@ -48,7 +58,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+let myString = "1999";
+let myInteger = parseInt(myString);
+console.log('task 1c ' + myInteger);
 
 
 /*
@@ -60,9 +72,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a, b){
+  return a * b;
 }
+
+console.log('task 1d ' + multiply(2, 3));
 
 
 
